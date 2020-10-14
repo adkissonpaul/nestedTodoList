@@ -69,7 +69,6 @@
   };
   
   function create(e) {
-    debugger;
     var input = e.target.value;
     var val = input.value.trim();
     if(e.which != ENTER_KEY && e.which != TAB_KEY && !val) {
@@ -77,7 +76,6 @@
     }
     
     if(e.which === ENTER_KEY) {
-      debugger;
       todos.push({
         title: val,
         subTodos: [],
