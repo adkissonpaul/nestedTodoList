@@ -108,7 +108,7 @@ function create(e) {
 function createNest(e) {
   var todoToNest = e.target.closest('li').getAttribute('data-id'); 
   
-  if(e.target.closest('li).previousElementSibling === null) {
+  if(e.target.closest('li').previousElementSibling === null) {
     return;
   };
                       
