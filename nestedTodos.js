@@ -107,6 +107,11 @@ function create(e) {
   
 function createNest(e) {
   var todoToNest = e.target.closest('li').getAttribute('data-id'); 
+  
+  if(e.target.closest('li).previousElementSibling === null) {
+    return;
+  };
+                      
   var nestLi = e.target.closest('li').previousElementSibling.getAttribute('data-id');
   
   function getSubTodoObj(array, dataid) {
